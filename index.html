@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- 如果用 webpack-dev-server（即devServer服务环境下） 打开 那么bundle.js文件的位置是相对于服务的
+        <script src="bundle.js"></script>  or
+        <script src="./bundle.js"></script> 
+    -->
+    <!-- 如果是通过 index.html 打开则应先 在node中执行 webpack命令，然后即可通过index.html 打开
+        <script src="./dist/bundle.js"></script> 
+    -->
+    <script src="bundle.js"></script> 
+</body>
+</html>
